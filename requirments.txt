@@ -1,0 +1,5 @@
+torch==1.1.0
+torchtext==0.4.0
+gensim==3.8.1
+wxpy==0.3.9.8 
+sanic==19.12.2

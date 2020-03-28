@@ -1,0 +1,6 @@
+/home/dyy/anaconda3/lib/python3.6/site-packages/sklearn/base.py:318: UserWarning: Trying to unpickle estimator KMeans from version 0.22.1 when using version 0.22.2.post1. This might lead to breaking code or invalid results. Use at your own risk.
+  UserWarning)
+Building prefix dict from the default dictionary ...
+Dumping model to file cache /tmp/jieba.cache
+Loading model cost 0.736 seconds.
+Prefix dict has been built succesfully.
