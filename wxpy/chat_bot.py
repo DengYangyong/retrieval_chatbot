@@ -23,7 +23,7 @@ def auto_response(msg):
         return "你发邓紫棋的MV我才会看哦！[吃瓜]"
 
     query = str(msg).split(':')[1]
-    query = re.sub("(Text)","",query).strip()
+    query = re.sub("\(Text\)","",query).strip()
     print("[接收]:"+query)
     if query in ["[捂脸]","[皱眉]","[奸笑]","[旺柴]","[微笑]","[撇嘴]","[发呆]","[流泪]","[尴尬]","[偷笑]","[奋斗]","[抠鼻]","[坏笑]","[吃瓜]","[呲牙]","[耶]","[Emm]","[社会社会]","[嘿哈]"]:
         return random.choice(["[捂脸]","[皱眉]","[奸笑]","[旺柴]","[微笑]","[偷笑]","[坏笑]","[吃瓜]","[社会社会]"])
@@ -35,6 +35,8 @@ def auto_response(msg):
         return "无语了是吧？我比你更无语呢。"
         
     ret = chat_service(query,6060)
+    if ret == "扫墓":
+        ret = "邓小帅不知道该说啥了[皱眉]"
     print("[发送]:"+str(ret))
     return ret
 
